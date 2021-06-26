@@ -10,7 +10,7 @@ public class sample1 {
 	public static void main(String[] args){
 		
 	//Set set=new HashSet();
-	String str="dbslp0307|09102019063011|decom|Wed Oct 9 06:30:11 2019|ps -eo user,lstart,cmd --sort=-start_time";
+	String str="abcde0307|09102019063011|dvjvd|Wed Oct 9 06:30:11 2019|ps -eo user,lstart,cmd --sort=-start_time";
 	//set.add(str.split("|"));
 	System.out.println(str.split("\\|")[0]);
 	System.out.println(str.split("\\|")[1]);
