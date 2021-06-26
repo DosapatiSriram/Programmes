@@ -33,7 +33,7 @@ public class ExcelToJson {
 		Scanner scannerObject = new Scanner(System.in);
 		 String CurrentCellValue;
 		try{
-			fileInputStreamObject = new FileInputStream(new File("C:\\Decomm\\BDPASS\\hadoop\\institional.xlsx"));
+			fileInputStreamObject = new FileInputStream(new File("C:\\sample\\institional.xlsx"));
 	        //BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
 	        //Create Workbook instance holding reference to .xlsx file
 	        Workbook workbook = new XSSFWorkbook(fileInputStreamObject);
