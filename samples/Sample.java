@@ -39,29 +39,29 @@ public class Sample {
 		
 		List<String> authorizedGroups = new ArrayList<String>(); 
 		
-		authorizedGroups.add("DA_CIPFACETS_ALL");
+		authorizedGroups.add("ABCD_GROUP_L");
 		
 		
-		authorizedGroups.add("unx_ach_apsrs5582");
+		authorizedGroups.add("GROUP_2");
 		
-		authorizedGroups.add("DA_DENTALSIEBEL_ALL");
+		authorizedGroups.add("GROUP_#");
 		
 		Map<String,List<String>> groupUrisMap = new HashMap<String,List<String>>();
 		String[] urls = {"*"};
-		groupUrisMap.put("DA_CIPFACETS_ALL", Arrays.asList(urls));
+		groupUrisMap.put("GROUP_2", Arrays.asList(urls));
 		
 
 		
 
-		String requestUri = "/CIPFacets/loginUser";
-		String contextPath = "/CIPFacets";
+		String requestUri = "/app1/loginUser";
+		String contextPath = "/app1";
 		
 		System.out.println("Request URI---"+requestUri);
 		System.out.println("CONTEXT PATH---"+contextPath);
 		
 		if(requestUri.equals(contextPath+"/")) {
 			//Going to home page
-			String accessGroups = "DA_CIPFACETS_ALL";
+			String accessGroups = "GROUP_2";
 			for (String accessGroup : authorizedGroups) {
 				if(accessGroups.contains(accessGroup)) {
 					if (!isAuthorized)
